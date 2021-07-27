@@ -21,7 +21,7 @@
         <!-- TODO: fixed top  -->
         <div class="container">
             <div class="row w-75 align-items-center justify-content-start">
-                <img src="assets/LOGOS/assoc.png" class="d-none d-sm-inline-block col-2">
+                <img src="assets/LOGOS/assoc.png" class="d-none d-sm-inline-block col-2 img-fluid">
                 <a class="col-auto navbar-brand fs-4" href="#">Mathematics Association
                     <span class="d-none d-md-block">BITS Pilani</span>
                 </a>
@@ -275,12 +275,14 @@
     <h1 id="ContactUs" class="container p-3 display-4 fw-bold">Contact Us</h1>
     <section class="text-dark" style="background-image: url('./assets/map.jpg'); background-repeat: no-repeat; background-size: cover;">
         <div class="container">
-            <div class="p-5 d-flex align-items-center justify-content-evenly gap-2">
-                <div class="">
-                    <iframe style="border: #fff 0.4rem solid; border-radius: 50%; height: 25vw; width: 25vw;"
+            <div class="row p-5 align-items-center justify-content-center gap-5 gap-md-0">
+                <div class="map col col-md-6 d-flex justify-content-center">
+                    <iframe style="border: #fff 0.4rem solid; border-radius: 50%; height: 17rem; width: 17rem;"
+                        class="shadow"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3510.829553736456!2d75.58477941433881!3d28.36400230293597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39131964f43e4575%3A0x1fbad30854cf884d!2sBirla+Institute+of+Technology+and+Science!5e0!3m2!1sen!2sin!4v1505764775549" style="border:0" allowfullscreen="" width="600" height="450" frameborder="0"></iframe>
                 </div>
-                <div class="p-4 w-auto d-flex flex-column justify-content-center gap-3">
+                <!-- <div class="p-4 w-auto d-flex flex-column justify-content-center gap-5 gap-md-3"> -->
+                <div class="col-auto col-md-6 d-flex flex-column justify-content-center gap-2">
                     <div class="detail1">
                         <span class="fw-bold lead">Professor In-charge</span>
                         <span class="d-block fw-bold">Dr. Sumanta Pasari</span>
@@ -432,6 +434,12 @@
             duration: 2000,
             origin: "bottom",
             distance: "300px",
+            viewFactor: 0.3
+        })
+        sr.reveal(".map", {
+            duration: 2000,
+            origin: "bottom",
+            distance: "200px",
             viewFactor: 0.3
         })
     </script>
